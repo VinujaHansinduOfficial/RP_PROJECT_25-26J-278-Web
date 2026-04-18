@@ -1,0 +1,48 @@
+.about { background: var(--bg2); }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-bottom: 2rem; }
+.mc {
+  background: var(--card); border: 1px solid var(--border2);
+  border-radius: var(--r); padding: 1.5rem; text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.mc:hover { border-color: var(--border); transform: translateY(-3px); }
+.av {
+  width: 58px; height: 58px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 800; margin: 0 auto 1rem; color: #0a0f1a;
+  object-fit: cover; border: 1px solid var(--border2);
+}
+.a1 { background: var(--teal); }
+.a2 { background: #64a0ff; }
+.a3 { background: #a880ff; }
+.a4 { background: #ffa050; }
+.mc h3 { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
+.msid { font-size: 0.72rem; color: var(--teal); font-weight: 700; margin-bottom: 0.45rem; }
+.mrole { font-size: 0.75rem; color: var(--text2); margin-bottom: 0.75rem; line-height: 1.5; }
+.mc a { font-size: 0.74rem; color: var(--teal); text-decoration: none; font-weight: 600; }
+.mc a:hover { text-decoration: underline; }
+
+.sup-row {
+  display: flex; background: var(--card);
+  border: 1px solid var(--border2); border-radius: var(--r); overflow: hidden;
+}
+.si {
+  flex: 1; padding: 1.5rem 2rem; border-right: 1px solid var(--border2);
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.si:last-child { border-right: none; }
+.sup-avatar {
+  width: 72px; height: 72px; border-radius: 50%; object-fit: cover;
+  margin-bottom: 1rem; border: 1px solid var(--border2);
+  background: var(--bg2);
+}
+.sl2 { font-size: 0.67rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text3); font-weight: 700; margin-bottom: 0.3rem; }
+.sv { font-size: 0.92rem; font-weight: 700; color: var(--text); }
+.sd { font-size: 0.78rem; color: var(--text2); }
+
+@media (max-width: 960px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .sup-row { flex-direction: column; }
+  .si { border-right: none; border-bottom: 1px solid var(--border2); }
+  .si:last-child { border-bottom: none; }
+}

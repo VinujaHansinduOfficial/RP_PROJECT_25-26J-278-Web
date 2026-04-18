@@ -1,0 +1,46 @@
+.contact { background: var(--bg); }
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 3rem; margin-top: 2rem;
+}
+.ci-list { display: flex; flex-direction: column; gap: 0.9rem; }
+.ci {
+  background: var(--card); border: 1px solid var(--border2);
+  border-radius: var(--r); padding: 1rem 1.25rem;
+  display: flex; align-items: flex-start; gap: 1rem;
+}
+.ci-ico { font-size: 1.1rem; flex-shrink: 0; padding-top: 3px; }
+.cl {
+  font-size: 0.67rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--text3);
+}
+.cv { font-size: 0.87rem; color: var(--text); font-weight: 500; }
+.cv a { color: var(--teal); text-decoration: none; }
+.cv a:hover { text-decoration: underline; }
+
+.cform { display: flex; flex-direction: column; gap: 0.8rem; }
+.cform input,
+.cform textarea {
+  padding: 0.72rem 1rem; border-radius: 6px;
+  border: 1px solid var(--border2);
+  background: var(--card); color: var(--text);
+  font-size: 0.88rem; font-family: var(--font);
+  outline: none; transition: border-color 0.2s;
+  width: 100%;
+}
+.cform input::placeholder,
+.cform textarea::placeholder { color: var(--text3); }
+.cform input:focus,
+.cform textarea:focus { border-color: var(--teal); }
+.cform textarea { min-height: 120px; resize: vertical; }
+.cform button { width: 100%; }
+
+.success-msg {
+  font-size: 0.82rem; color: var(--teal);
+  text-align: center; animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 960px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
