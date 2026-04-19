@@ -36,5 +36,26 @@
 .dl-btn.disabled { border-color: var(--border2); color: var(--text3); cursor: not-allowed; }
 .dl-btn.disabled:hover { background: transparent; color: var(--text3); }
 
+.dl-button-wrap {
+  position: relative;
+}
+
+.member-menu {
+  position: absolute; bottom: 100%; right: 0; margin-bottom: 0.5rem;
+  background: #0a0f1a; border: 1px solid var(--border2);
+  border-radius: 4px; padding: 0.5rem;
+  display: flex; flex-direction: column; gap: 0.25rem;
+  z-index: 10; min-width: 120px;
+}
+
+.dl-member-btn {
+  background: transparent; border: 1px solid var(--teal); color: var(--teal);
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+  padding: 5px 10px; border-radius: 3px; cursor: pointer;
+  font-family: var(--font); transition: all 0.2s;
+  width: 100%; text-align: left;
+}
+.dl-member-btn:hover { background: var(--teal); color: #0a0f1a; }
+
 @media (max-width: 960px) { .dl-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .dl-grid { grid-template-columns: 1fr; } }
