@@ -2,10 +2,10 @@ import React from 'react';
 import './About.css';
 
 const members = [
-  { initials: 'KK', name: 'Kumarasinghe K D K Y', id: 'IT22321268', role: 'Early Identification via Time-Series Forecasting (LSTM & ARIMA)', email: 'it22321268@my.sliit.lk', color: 'a1', image: '/docs/member-kk.svg' },
-  { initials: 'WI', name: 'Indrapala W.V.H.',       id: 'IT22917898', role: 'Student Burnout Detection & Intervention using Machine Learning',  email: 'it22917898@my.sliit.lk', color: 'a2', image: '/docs/member-wi.svg' },
-  { initials: 'AD', name: 'De Silva A.H.H.',         id: 'IT22032560', role: 'On-Device AI Summarization of Text & Behavior',                   email: 'it22032560@my.sliit.lk', color: 'a3', image: '/docs/member-ad.svg' },
-  { initials: 'AR', name: 'Ranathunga A.K.M.',       id: 'IT22888334', role: 'Facial Emotion Detection with Personalized Interventions',          email: 'it22888334@my.sliit.lk', color: 'a4', image: '/docs/member-ar.svg' },
+  { initials: 'KK', name: 'Kumarasinghe K D K Y', id: 'IT22321268', role: 'Early Identification via Time-Series Forecasting (LSTM & ARIMA)', email: 'it22321268@my.sliit.lk', color: 'a1', image: '/docs/member-kk.jpg' },
+  { initials: 'WI', name: 'Indrapala W.V.H.',       id: 'IT22917898', role: 'Student Burnout Detection & Intervention using Machine Learning',  email: 'it22917898@my.sliit.lk', color: 'a2', image: '/docs/member-wi.jpeg' },
+  { initials: 'AD', name: 'De Silva A.H.H.',         id: 'IT22032560', role: 'On-Device AI Summarization of Text & Behavior',                   email: 'it22032560@my.sliit.lk', color: 'a3', image: '/docs/member-ad.png' },
+  { initials: 'AR', name: 'Ranathunga A.K.M.',       id: 'IT22888334', role: 'Facial Emotion Detection with Personalized Interventions',          email: 'it22888334@my.sliit.lk', color: 'a4', image: '/docs/member-ar.png' },
 ];
 
 const supervisors = [

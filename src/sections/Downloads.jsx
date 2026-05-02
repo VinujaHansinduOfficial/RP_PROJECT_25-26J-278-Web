@@ -4,8 +4,8 @@ import './Downloads.css';
 const documents = [
   { icon: '📄', title: 'Topic Assessment',        date: '2025/07/24', type: 'Group',      available: true,  file: '/docs/topic-assessment.pdf',           filename: 'Topic-Assessment.pdf' },
   { icon: '📄', title: 'Project Proposal',         date: '2025/08/13', type: 'Individual', available: true,  files: { 1: '/docs/project-proposal-member-1.pdf', 2: '/docs/project-proposal-member-2.pdf', 3: '/docs/project-proposal-member-3.pdf', 4: '/docs/project-proposal-member-4.pdf' }, filename: 'Project-Proposal.pdf' },
-  { icon: '📄', title: 'Progress Presentation I',  date: '2025/12/05', type: 'Group',      available: true, file: '/docs/progress-presentation-1.pptx',     filename: 'Progress-Presentation-1.pptx' },
-  { icon: '📄', title: 'Progress Presentation II', date: '2026/03/19', type: 'Group',      available: false, file: '/docs/progress-presentation-2.pdf',     filename: 'Progress-Presentation-2.pdf' },
+  { icon: '📄', title: 'Progress Presentation I',  date: '2025/12/05', type: 'Group',      available: true, file: '/docs/Progress-Presentation-1.pptx',     filename: 'Progress-Presentation-1.pptx' },
+  { icon: '📄', title: 'Progress Presentation II', date: '2026/03/19', type: 'Group',      available: true, file: '/docs/Progress-Presentation-2.pptx',     filename: 'Progress-Presentation-2.pptx' },
   { icon: '📄', title: 'Research Paper',           date: '2026/03/25', type: 'Group',      available: true,  file: '/docs/research-paper.pdf',               filename: 'Research-Paper.pdf' },
   { icon: '📋', title: 'Individual Final Reports', date: '2026/03/25', type: 'Individual', available: true,  files: { 1: '/docs/individual-final-reports-member-1.pdf', 2: '/docs/individual-final-reports-member-2.pdf', 3: '/docs/individual-final-reports-member-3.pdf', 4: '/docs/individual-final-reports-member-4.pdf' }, filename: 'Individual-Final-Reports.pdf' },
   { icon: '📚', title: 'Final Report',             date: '2026/03/25', type: 'Group',      available: false, file: '/docs/final-report.pdf',                 filename: 'Final-Report.pdf' },
@@ -104,11 +104,6 @@ export default function Downloads() {
           title="Documents"
           desc="Please find all documents related to this project below."
           items={documents}
-        />
-        <DownloadGroup
-          title="Presentation Slides"
-          desc="Slides used in past and upcoming presentations."
-          items={slides}
         />
       </div>
     </section>
